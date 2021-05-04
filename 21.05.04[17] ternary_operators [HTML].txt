@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ternary_operators</title>
+	<script>
+	
+		document.write("<h3>삼항 연산자를 이용하여 양수,0,음수를 판별하는 프로그램</h3>");
+		var num = Number(prompt('숫자를 입력하세요.'));
+		
+		(num>0)?alert('양수 입니다.') : (num<0)?alert('음수 입니다.'):alert('0입니다.');
+	</script>
+</head>
+<body>
+
+</body>
+</html>
