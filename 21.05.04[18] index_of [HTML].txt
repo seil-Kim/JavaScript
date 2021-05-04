@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index_of</title>
+	<script>
+		var input="여러분, 안녕하세요".indexOf("안녕");
+		alert(input);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
