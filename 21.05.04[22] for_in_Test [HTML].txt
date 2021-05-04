@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for_in_Test</title>
+	<script>
+		var score=[52,273,103,32,57,103,31,2];
+		var max = score[0];
+		var min = score[0];
+		for(var key in score){
+			document.write("score["+key+"]:"+score[key]+"<br>");
+			if(max < score[key])
+				max = score[key];
+			if(min > score[key])
+				min = score[key];
+		}
+		document.write("최대값 : "+max+"<br>");
+		document.write("최소값 : "+min);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
