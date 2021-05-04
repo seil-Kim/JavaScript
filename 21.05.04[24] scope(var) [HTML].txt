@@ -1,0 +1,65 @@
+변수의 유효범위(scope)
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>scope</title>
+	<script>
+		function f1(){
+			a=20;
+		}
+		
+		f1();
+		document.write("a = "+a+ "<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+----------------------------------------
+
+[function f1()의 a를 var로](출력x)
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>scope</title>
+	<script>
+		function f1(){
+			var a=20;
+		}
+		
+		f1();
+		document.write("a = "+a+ "<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+---------------------------------
+
+[if로 주면 됨]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>scope</title>
+	<script>
+		if(true){
+			var a = 20;
+		}
+		
+		document.write("a = "+a+ "<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
