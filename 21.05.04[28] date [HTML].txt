@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>date</title>
+	<script>
+		var cYear = new Date();
+		nYear = new Date(2022,0,1);
+		year = cYear.getFullYear();
+		month = cYear.getMonth();
+		date = cYear.getDate();
+		day = cYear.getDay();
+		hour = cYear.getHours();
+		minute = cYear.getMinutes();
+		
+		switch(day){
+			case 0: days="일"; break;
+			case 1: days="월"; break;
+			case 2: days="화"; break;
+			case 3: days="수"; break;
+			case 4: days="목"; break;
+			case 5: days="금"; break;
+			case 6: days="토";
+		}
+		leftedTime = nYear.getTime() - cYear.getTime();
+		leftedDays = Math.floor(leftedTime / (24*60*60*1000));
+		document.write("오늘은" +year+ "년" +month+ "월" +date+ "일("+days+"요일)이고,<br>");
+		document.write("현재 시간은" +hour+ "시" +minute+ "분입니다.<hr>");
+		document.write("새해 첫 날까지는" +leftedDays+ "일이 남았습니다.<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
