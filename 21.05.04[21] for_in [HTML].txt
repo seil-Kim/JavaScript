@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for_in</title>
+	<script>
+		var score=[0,10,20,30,40];
+		score[0]=5;
+		score["1"]=15;
+		score["two"]=25;
+		score[7]=55;
+		for(i=0; i<score.length; i++){
+			document.write("score["+i+"]:"+score[i]+"<br>");
+		}
+		document.write("<hr>");
+		for(var key in score){
+			document.write("score["+key+"]:"+score[key]+"<br>");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
