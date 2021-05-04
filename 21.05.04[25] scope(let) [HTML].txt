@@ -1,0 +1,62 @@
+[var -> let 하면 출력x]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>scope</title>
+	<script>
+		if(true){
+			let a = 20;
+		}
+		
+		document.write("a = "+a+ "<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+-------------------------------
+
+[블럭 안에 넣으면 출력o]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>scope</title>
+	<script>
+		if(true){
+			let a = 20;
+			document.write("a = "+a+ "<br>");
+		}		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+---------------------------------
+
+[밖으로 끄집어내기]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>scope</title>
+	<script>
+		let a;
+		if(true){
+			a = 20;
+		}	
+		document.write("a = "+a+ "<br>");	
+	</script>
+</head>
+<body>
+
+</body>
+</html>
