@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>prompt</title>
+</head>
+<body>
+	<script>
+		var name=prompt("이름은?");
+		var kor=prompt("국어 시험성적은?");
+		var math=prompt("수학 시험성적은?")
+		total = Number(kor)+Number(math);
+		avg = total/3;
+		document.write("<table border=1>");
+		document.write("<tr><td>이름</td><td>"+name+"</td></tr>");
+		document.write("<tr><td>국어</td><td>"+kor+"</td></tr>");
+		document.write("<tr><td>수학</td><td>"+math+"</td></tr>");
+		document.write("<tr><td>총점</td><td>"+total+"</td></tr>");
+		document.write("<tr><td>평균</td><td>"+avg+"</td></tr>");
+		document.write("</tavle>");
+	</script>
+</body>
+</html>
