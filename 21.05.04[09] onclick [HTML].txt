@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>inline javascipt</title>
+</head>
+<body>
+<h3>인라인 자바스크립트 작성</h3>
+<button onclick="alert('Welcome to Web Programming!');">
+웹프로그래밍
+</button>
+<a href="javascript: alert('Welcome to Javascript!');">자바스크립트</a>
+</body>
+</html>
