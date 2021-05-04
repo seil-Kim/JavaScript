@@ -1,0 +1,23 @@
+[월은 월-1 해야함]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>date</title>
+	<script>
+		var d1=new Date();
+		var d2=new Date(2021, 0, 1, 0, 0, 1);
+		var d3=new Date(500000000000);
+		var d4=new Date(2000, 12, 25); /* 12월은 11을 넣어아함. 따라서 2000+1, 1월 로 출력 */
+		
+		document.write(d1+"<br>");
+		document.write(d2+"<br>");
+		document.write(d3+"<br>");
+		document.write(d4+"<br>");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
