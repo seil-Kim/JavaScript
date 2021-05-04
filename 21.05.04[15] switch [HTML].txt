@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>switch</title>
+</head>
+<body>
+	<script>
+		var num;
+		var result;
+		
+		document.write("<h3>홀 짝 숫자 판정</h3>");
+		num=prompt("숫자를 입력하세요.");
+		document.write(num);
+		switch(parseInt(num)%2){
+		case 0 : result="짝수 입니다.";break;
+		case 1 : result="홀수 입니다.";break;
+		default : result="숫자가 아닙니다.";break;
+		}
+		document.write("<hr>판정 결과 :</hr>");
+		document.write(num+"("+result+")");
+	</script>
+</body>
+</html>
+
+--------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>switch</title>
+</head>
+<body>
+	<script>
+		var input=Number(prompt('숫자를 입력하세요.', '숫자'));
+		
+		switch(input % 2){
+			case 0:
+				alert('짝수입니다.');
+				break;
+			case 1:
+				alert('홀수입니다.');
+				break;
+			default:
+				alert('숫자가 아닙니다.');
+				break;		
+		}
+		document.write("<h1>"+input+"</h1>");
+	</script>
+</body>
+</html>
