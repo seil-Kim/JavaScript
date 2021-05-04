@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index_of_test</title>
+	<script>
+		var com = prompt("문자열을 입력해주세요.");
+		if(com.indexOf("안녕")>=0)
+			document.write("안녕하세요.");
+		else if(com.indexOf("잘자")>=0 || com.indexOf("잘 자")>=0)
+			document.write("안녕히 주무세요.");
+		else
+			document.write("안녕 또는 잘자 또는 잘 자 를 입력하여 주세요.");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
+----------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index_of_test</title>
+	<script>
+		var str = prompt("대화 입력");
+		if(str.indexOf('안녕')!=-1)
+			alert("안녕하세요...!");
+		else if(str.indexOf("잘자")!= -1 || str.indexOf("잘 자")!= -1)
+			alert("안녕히 주무세요.");
+	</script>
+</head>
+<body>
+
+</body>
+</html>
