@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>screen</title>
+</head>
+<body>
+	<button onclick="halfWindow();">half-window</button>
+	<button onclick="quaterWindow();">quater-window</button>
+	<script>
+		function halfWindow(){
+			var w1=window.open('','','width=200, height=150');
+			var width=screen.width/2;
+			var height=screen.height/2;
+			w1.top += 30; w1.left += 30;
+			w1.resizeTo(width,height);
+		}
+		function quaterWindow(){
+			var w1=window.open('','','width=200, height=150');
+			var width=screen.width/4;
+			var height=screen.height/4;
+			w1.top=0; w1.left=0;
+			w1.resizeTo(width,height);
+		}
+	</script>
+</body>
+</html>
+
+----------------------------------------------
+[스크린 크기]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>screen_width_height</title>
+</head>
+<body>
+	<script>
+		var w = screen.width;
+		var h = screen.height;
+		alert("해상도 가로" + w + "세로" +h);
+	</script>
+</body>
+</html>
+
+-----------------------------------------------
+[팝업창 전체화면]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>screen_full</title>
+	<script>
+		var width = screen.width;
+		var height = screen.height;
+		var option = 'width='+width+',height='+height;
+		function openChild(){
+			window.open('','',option);
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Open" onclick="openChild()"/>
+</body>
+</html>
+
+----------------------------------------------
+[팝업창 센터]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>screen_center</title>
+	<script>
+		var width = screen.width/2;
+		var height = screen.height/2;
+		var left = screen.width/4;
+		var top = screen.height/4;
+		var option = 'width='+width+',height='+height+',left='+left+',top='+top;
+		function openChild(){
+			window.open('','',option);
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Open" onclick="openChild()"/>
+</body>
+</html>
