@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mouseover_out</title>
+</head>
+<body>
+	<script>
+		function f1(obj){obj.src = "../image/image001.JPG";}
+		
+		function f2(obj){obj.src = "../image/image002.JPG";}
+	</script>
+	
+	<h4>마우스를 그림 위로 이동하면 ...</h4>
+	<img id = "fg" scr = "../image/image001.JPG" width="200" height="150"
+		onmouseover = "f1(this);"
+		onmouseout = "f2(this);"
+		oncontextmenu = "return false;">
+</body>
+</html>
