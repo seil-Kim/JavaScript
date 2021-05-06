@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>setTimeout</title>
+</head>
+<body>
+	<h3> setTimeout() 메서드 1 </h3><hr>
+	생각하는 시간(30초)
+	<button onclick="thinkingStart();">Start</button><hr>
+	<img id = "img1" style = "visibility:hidden", src = "../image/thinking.PNG" width=200 height=250/>
+	<p id="noti"> </p>
+	<script>
+		function thinkingStart(){
+			document.images[0].style.visibility="visible";
+			setTimeout(myTimer,3000);
+		}
+		function myTimer(){
+			document.images[0].style.visibility="hidden";
+			document.getElementById("noti").innerHTML="30초가 경과했습니다!";
+		}
+	</script>
+</body>
+</html>
+
+-------------------------------------
+
+[End 추가]
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>setTimeout</title>
+</head>
+<body>
+	<h3> setTimeout() 메서드 1 </h3><hr>
+	생각하는 시간(30초)
+	<button onclick="thinkingStart();">Start</button>
+	<button onclick="thinkingEnd();">End</button><hr>
+	<img id = "img1" style = "visibility:hidden", src = "../image/thinking.PNG" width=200 height=250/>
+	<p id="noti"> </p>
+	<script>
+		function thinkingStart(){
+			document.images[0].style.visibility="visible";
+			var t1 = setTimeout(myTimer,3000);
+		}
+		function myTimer(){
+			document.images[0].style.visibility="hidden";
+			document.getElementById("noti").innerHTML="30초가 경과했습니다!";
+		}
+		function thinkingEnd(){
+			document.images[0].style.visibility="hidden";
+			clearTimeout(t1);
+		}
+	</script>
+</body>
+</html>
