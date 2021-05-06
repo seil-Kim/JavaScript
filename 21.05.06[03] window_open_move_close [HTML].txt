@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window_open_move_close</title>
+	<script>
+		var child;
+		function openChild(){
+			child=window.open("", "", "width=400, height=300, resizable=no");
+			child.document.write("<p>Child Window</p>");
+			child.moveTo(200, 200);
+		}
+		function moveChild(){
+			child.moveBy(100, 100);
+			child.focus();
+		}
+		function closeChild(){
+			child.close();
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Open" onclick="openChild()"/>
+	<input type="button" value="Move" onclick="moveChild()"/>
+	<input type="button" value="Close" onclick="closeChild()"/>
+</body>
+</html>
