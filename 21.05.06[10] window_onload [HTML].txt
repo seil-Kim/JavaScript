@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window_onload</title>
+	<script>
+		window.onload = function(){
+			var color = ['green', 'red', 'blue', 'orange'];
+			var plist = document.querySelectorAll("p");
+			for (var p in plist){
+				plist[p].innerHTML = (Number(p) + 1) + '번째 문단 입니다';
+				plist[p].style.color = color[p];
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>제목입니다.</h1>
+	<p>문단1</p>
+	<p>문단2</p>
+	<p>문단3</p>
+	<p>문단4</p>
+</body>
+</html>
+
+---------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window_onload</title>
+	<script>
+		window.onload = function(){
+			var color = ['green', 'red', 'blue', 'orange'];
+			var plist = document.querySelectorAll("p");
+			for (var p in plist){
+				plist[p].innerHTML = (Number(p)+1)+"번째 과일은"+ plist[p].innerHTML+ '입니다';
+				plist[p].style.color = color[p];
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>내가 좋아하는 과일 목록</h1>
+	<p>사과</p>
+	<p>오렌지</p>
+	<p>복숭아</p>
+	<p>딸기</p>
+</body>
+</html>
