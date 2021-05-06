@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window_open_close</title>
+</head>
+<body>
+	<h3>새 윈도우 열기 및 닫기</h3>
+	<button onclick="w1 = window.open();">빈 윈도우 열기</button>
+	<button onclick="w1.close();">윈도우 닫기</button><br>
+	
+	<button onclick="w2 = window.open('','win1');">윈도우(win1) 열기</button>
+	<button onclick="w2.close();">윈도우(win1)닫기</button><br>
+	
+	<button onclick="w3 = window.open('','win2', 'width=250, height=150');">윈도우(win2) 열기</button>
+	<button onclick="w3.close();">윈도우(win2)닫기</button><br><br>
+	<a href = "http://naver.com" target="win2">네이버</a>
+</body>
+</html>
