@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>parent_Node</title>
+</head>
+<body>
+	<h3>피겨선수의 회전 연속동작</h3>
+	<hr><div id="p1">
+		<img src="../image/f7.png" width=50 height=70/>
+		<img src="../image/f6.png" width=50 height=70/>
+		<img src="../image/f5.png" width=50 height=70/>
+		<img src="../image/f4.png" width=50 height=70/>
+		<img src="../image/f3.png" width=50 height=70/>
+		<img src="../image/f2.png" width=50 height=70/>
+		<img src="../image/f1.png" width=50 height=70/>
+	</div><hr>
+	<button onclick = "setInterval(movingImages, 500);">Start</button>
+	
+	<script>
+	function movingImages(){
+		var parent = document.getElementById('p1');
+		var imgTags = document.querySelectorAll('img');
+		var movingImage = imgTags[0];
+		parent.removeChild(movingImage);
+		parent.appendChild(movingImage);
+	}
+	</script>
+</body>
+</html>
