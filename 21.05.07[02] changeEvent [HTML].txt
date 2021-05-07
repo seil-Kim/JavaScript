@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>changeEvent</title>
+</head>
+<body>
+<form action="#" name="frm">
+	<div><input type="checkbox" name="all" id="all" onclick="allCheck()" /><label for="all">전체동의</label></div>
+	<p> <textarea cols="30" rows="10">약관동의</textarea><br>
+	<input type="checkbox" name="agree1" id="agree1" onchange="changeChk()" /><label for="agree1">약관동의</label> </p>
+	<p> <textarea cols="30" rows="10">개인정보</textarea><br>
+	<input type="checkbox" name="agree2" id="agree2" onchange="changeChk()" /><label for="agree2">개인정보동의</label> </p>
+	<p><input type="button" value="동의" onclick="check()"/><input type="reset" value="취소"/></p>
+</form>
+<script>
+function check(){
+	var frm=document.frm;
+	if(!frm.agree1.checked){
+		alert("약관에 동의하세요!");
+		return;
+	}
+	if(!frm.agree2.checked){
+		alert("개인정보에 동의하세요!");
+		return;
+	}
+	
+	location.assign('InputForm.html')
+}
+function allCheck(){
+	if(frm.all.checked){
+	document.getElementById("agree1").checked=true;
+	document.getElementById("agree2").checked=true;
+	} else {
+		frm.agree1.checked=false;
+		frm.agree2.checked=false;
+	}
+}
+function changeChk(){
+	if(frm.agree1.checked&&frm.agree2.checked){
+		frm.all.checked=true;
+	} else {
+		frm.all.checked=false;
+	}
+}
+</script>
+</body>
+</html>
